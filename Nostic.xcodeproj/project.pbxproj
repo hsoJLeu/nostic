@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D004FE1A2A1F3E0A00BDFEDC /* CentralDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D004FE192A1F3E0A00BDFEDC /* CentralDevice.swift */; };
+		D004FE1D2A1F414E00BDFEDC /* CombineCoreBluetooth in Frameworks */ = {isa = PBXBuildFile; productRef = D004FE1C2A1F414E00BDFEDC /* CombineCoreBluetooth */; };
+		D0077BB52A046ED0008CDD35 /* LoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0077BB42A046ED0008CDD35 /* LoggingView.swift */; };
+		D0077BB72A04719B008CDD35 /* LoggingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0077BB62A04719B008CDD35 /* LoggingViewModel.swift */; };
+		D0077BB92A0473DD008CDD35 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0077BB82A0473DD008CDD35 /* LogService.swift */; };
+		D010BC652A137B8D0079760D /* SimpleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D010BC642A137B8D0079760D /* SimpleImageView.swift */; };
+		D04C0E142A44E244006F9E53 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C0E132A44E244006F9E53 /* ConnectView.swift */; };
+		D04C0E162A4E54BF006F9E53 /* WithPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C0E152A4E54BF006F9E53 /* WithPopover.swift */; };
+		D081E5522995902900397394 /* NosticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081E5512995902900397394 /* NosticApp.swift */; };
+		D081E5562995902B00397394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D081E5552995902B00397394 /* Assets.xcassets */; };
+		D081E5592995902B00397394 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D081E5582995902B00397394 /* Preview Assets.xcassets */; };
+		D081E563299590B900397394 /* network in Resources */ = {isa = PBXBuildFile; fileRef = D081E560299590B900397394 /* network */; };
+		D081E56B299593C700397394 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081E569299593C700397394 /* GaugeView.swift */; };
+		D086D24829AEC01000AEA541 /* GaugeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086D24729AEC01000AEA541 /* GaugeStyle.swift */; };
+		D086D24A29AFE9B600AEA541 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086D24929AFE9B600AEA541 /* TabBar.swift */; };
+		D086D24F29B1537400AEA541 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086D24E29B1537400AEA541 /* Constants.swift */; };
+		D086D25729B15C6F00AEA541 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086D25629B15C6F00AEA541 /* HomeView.swift */; };
+		D086D25A29B1720A00AEA541 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086D25929B1720A00AEA541 /* Settings.swift */; };
+		D086D25C29B17DB900AEA541 /* KeywordBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086D25B29B17DB900AEA541 /* KeywordBubble.swift */; };
+		D086D26529BA6BAB00AEA541 /* BluetoothClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086D26329BA6BAA00AEA541 /* BluetoothClient.swift */; };
+		D086D26629BA6BAB00AEA541 /* SensorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086D26429BA6BAB00AEA541 /* SensorList.swift */; };
+		D086D26829BA6D7000AEA541 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086D26729BA6D7000AEA541 /* HomeViewModel.swift */; };
+		D087861F29F3655900286C90 /* SensorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D087861E29F3655900286C90 /* SensorsViewModel.swift */; };
+		D087862129F3CEF400286C90 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D087862029F3CEF400286C90 /* InfoRow.swift */; };
+		D0963E6729DF619000EA6E9E /* SensorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0963E6629DF619000EA6E9E /* SensorsView.swift */; };
+		D09F2D422A09A97D00F0AB7D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09F2D412A09A97D00F0AB7D /* NetworkService.swift */; };
+		D0A5B5D929959493001CC06B /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081E568299593C700397394 /* ChartView.swift */; };
+		D0C4FEB929E8C32400AD090B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4FEB829E8C32300AD090B /* Colors.swift */; };
+		D0C4FEBB29EDEFE900AD090B /* ObdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4FEBA29EDEFE900AD090B /* ObdData.swift */; };
+		D0C4FEBD29EF43EB00AD090B /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4FEBC29EF43EB00AD090B /* CustomModifier.swift */; };
+		D0C4FEC029F1EC0900AD090B /* ObdDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4FEBF29F1EC0900AD090B /* ObdDataModel.swift */; };
+		D0C4FEC329F3553300AD090B /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4FEC229F3553300AD090B /* TextModifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D004FE192A1F3E0A00BDFEDC /* CentralDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralDevice.swift; sourceTree = "<group>"; };
+		D0077BB42A046ED0008CDD35 /* LoggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingView.swift; sourceTree = "<group>"; };
+		D0077BB62A04719B008CDD35 /* LoggingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingViewModel.swift; sourceTree = "<group>"; };
+		D0077BB82A0473DD008CDD35 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		D010BC642A137B8D0079760D /* SimpleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleImageView.swift; sourceTree = "<group>"; };
+		D04C0E132A44E244006F9E53 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		D04C0E152A4E54BF006F9E53 /* WithPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithPopover.swift; sourceTree = "<group>"; };
+		D081E54E2995902900397394 /* Nostic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nostic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D081E5512995902900397394 /* NosticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosticApp.swift; sourceTree = "<group>"; };
+		D081E5552995902B00397394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D081E5582995902B00397394 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D081E560299590B900397394 /* network */ = {isa = PBXFileReference; lastKnownFileType = folder; path = network; sourceTree = "<group>"; };
+		D081E5672995910000397394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D081E568299593C700397394 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		D081E569299593C700397394 /* GaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		D086D24729AEC01000AEA541 /* GaugeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeStyle.swift; sourceTree = "<group>"; };
+		D086D24929AFE9B600AEA541 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D086D24E29B1537400AEA541 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D086D25629B15C6F00AEA541 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D086D25929B1720A00AEA541 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D086D25B29B17DB900AEA541 /* KeywordBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordBubble.swift; sourceTree = "<group>"; };
+		D086D26329BA6BAA00AEA541 /* BluetoothClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothClient.swift; sourceTree = "<group>"; };
+		D086D26429BA6BAB00AEA541 /* SensorList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorList.swift; sourceTree = "<group>"; };
+		D086D26729BA6D7000AEA541 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D087861E29F3655900286C90 /* SensorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsViewModel.swift; sourceTree = "<group>"; };
+		D087862029F3CEF400286C90 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		D0963E6629DF619000EA6E9E /* SensorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsView.swift; sourceTree = "<group>"; };
+		D09F2D412A09A97D00F0AB7D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D0C4FEB829E8C32300AD090B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D0C4FEBA29EDEFE900AD090B /* ObdData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObdData.swift; sourceTree = "<group>"; };
+		D0C4FEBC29EF43EB00AD090B /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
+		D0C4FEBF29F1EC0900AD090B /* ObdDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObdDataModel.swift; sourceTree = "<group>"; };
+		D0C4FEC229F3553300AD090B /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D081E54B2995902900397394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D004FE1D2A1F414E00BDFEDC /* CombineCoreBluetooth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D004FE182A1F3DEA00BDFEDC /* OBD */ = {
+			isa = PBXGroup;
+			children = (
+				D0C4FEBA29EDEFE900AD090B /* ObdData.swift */,
+				D0C4FEBF29F1EC0900AD090B /* ObdDataModel.swift */,
+				D004FE192A1F3E0A00BDFEDC /* CentralDevice.swift */,
+			);
+			path = OBD;
+			sourceTree = "<group>";
+		};
+		D0077BB32A046EA6008CDD35 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				D0077BB42A046ED0008CDD35 /* LoggingView.swift */,
+				D0077BB62A04719B008CDD35 /* LoggingViewModel.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		D04C0E112A3BD349006F9E53 /* Gauge */ = {
+			isa = PBXGroup;
+			children = (
+				D081E569299593C700397394 /* GaugeView.swift */,
+				D086D24729AEC01000AEA541 /* GaugeStyle.swift */,
+			);
+			path = Gauge;
+			sourceTree = "<group>";
+		};
+		D081E5452995902800397394 = {
+			isa = PBXGroup;
+			children = (
+				D081E5502995902900397394 /* Nostic */,
+				D081E54F2995902900397394 /* Products */,
+				D086D26029BA6A6400AEA541 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D081E54F2995902900397394 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D081E54E2995902900397394 /* Nostic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D081E5502995902900397394 /* Nostic */ = {
+			isa = PBXGroup;
+			children = (
+				D0C4FEBE29F1EBC200AD090B /* Utility */,
+				D086D25529B15C4600AEA541 /* Screen */,
+				D086D25029B1568B00AEA541 /* Component */,
+				D0C4FEC429F3553800AD090B /* Modifiers */,
+				D086D24B29B1312100AEA541 /* Extensions */,
+				D081E560299590B900397394 /* network */,
+				D081E5512995902900397394 /* NosticApp.swift */,
+				D0C4FEB829E8C32300AD090B /* Colors.swift */,
+				D086D24E29B1537400AEA541 /* Constants.swift */,
+				D081E5672995910000397394 /* Info.plist */,
+				D081E5552995902B00397394 /* Assets.xcassets */,
+				D081E5572995902B00397394 /* Preview Content */,
+			);
+			path = Nostic;
+			sourceTree = "<group>";
+		};
+		D081E5572995902B00397394 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D081E5582995902B00397394 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D086D24B29B1312100AEA541 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D086D25029B1568B00AEA541 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				D04C0E112A3BD349006F9E53 /* Gauge */,
+				D081E568299593C700397394 /* ChartView.swift */,
+				D04C0E132A44E244006F9E53 /* ConnectView.swift */,
+				D086D24929AFE9B600AEA541 /* TabBar.swift */,
+				D086D25B29B17DB900AEA541 /* KeywordBubble.swift */,
+				D087862029F3CEF400286C90 /* InfoRow.swift */,
+				D04C0E152A4E54BF006F9E53 /* WithPopover.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		D086D25529B15C4600AEA541 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D0C4FEC129F3345700AD090B /* Home */,
+				D087861D29F364C600286C90 /* Sensors */,
+				D0077BB32A046EA6008CDD35 /* Logging */,
+				D086D25929B1720A00AEA541 /* Settings.swift */,
+				D010BC642A137B8D0079760D /* SimpleImageView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		D086D26029BA6A6400AEA541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D087861D29F364C600286C90 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				D0963E6629DF619000EA6E9E /* SensorsView.swift */,
+				D087861E29F3655900286C90 /* SensorsViewModel.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		D0C4FEBE29F1EBC200AD090B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D004FE182A1F3DEA00BDFEDC /* OBD */,
+				D0077BB82A0473DD008CDD35 /* LogService.swift */,
+				D086D26329BA6BAA00AEA541 /* BluetoothClient.swift */,
+				D086D26429BA6BAB00AEA541 /* SensorList.swift */,
+				D09F2D412A09A97D00F0AB7D /* NetworkService.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D0C4FEC129F3345700AD090B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D086D25629B15C6F00AEA541 /* HomeView.swift */,
+				D086D26729BA6D7000AEA541 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D0C4FEC429F3553800AD090B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D0C4FEBC29EF43EB00AD090B /* CustomModifier.swift */,
+				D0C4FEC229F3553300AD090B /* TextModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D081E54D2995902900397394 /* Nostic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D081E55C2995902B00397394 /* Build configuration list for PBXNativeTarget "Nostic" */;
+			buildPhases = (
+				D081E54A2995902900397394 /* Sources */,
+				D081E54B2995902900397394 /* Frameworks */,
+				D081E54C2995902900397394 /* Resources */,
+				D04C0E122A3CDBE6006F9E53 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nostic;
+			packageProductDependencies = (
+				D004FE1C2A1F414E00BDFEDC /* CombineCoreBluetooth */,
+			);
+			productName = Nostic;
+			productReference = D081E54E2995902900397394 /* Nostic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D081E5462995902800397394 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D081E54D2995902900397394 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D081E5492995902800397394 /* Build configuration list for PBXProject "Nostic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D081E5452995902800397394;
+			packageReferences = (
+				D004FE1B2A1F414E00BDFEDC /* XCRemoteSwiftPackageReference "CombineCoreBluetooth" */,
+			);
+			productRefGroup = D081E54F2995902900397394 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D081E54D2995902900397394 /* Nostic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D081E54C2995902900397394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D081E5592995902B00397394 /* Preview Assets.xcassets in Resources */,
+				D081E563299590B900397394 /* network in Resources */,
+				D081E5562995902B00397394 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D04C0E122A3CDBE6006F9E53 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D081E54A2995902900397394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010BC652A137B8D0079760D /* SimpleImageView.swift in Sources */,
+				D081E5522995902900397394 /* NosticApp.swift in Sources */,
+				D0C4FEB929E8C32400AD090B /* Colors.swift in Sources */,
+				D004FE1A2A1F3E0A00BDFEDC /* CentralDevice.swift in Sources */,
+				D0963E6729DF619000EA6E9E /* SensorsView.swift in Sources */,
+				D086D24829AEC01000AEA541 /* GaugeStyle.swift in Sources */,
+				D081E56B299593C700397394 /* GaugeView.swift in Sources */,
+				D04C0E162A4E54BF006F9E53 /* WithPopover.swift in Sources */,
+				D087861F29F3655900286C90 /* SensorsViewModel.swift in Sources */,
+				D0C4FEBD29EF43EB00AD090B /* CustomModifier.swift in Sources */,
+				D0A5B5D929959493001CC06B /* ChartView.swift in Sources */,
+				D086D24A29AFE9B600AEA541 /* TabBar.swift in Sources */,
+				D04C0E142A44E244006F9E53 /* ConnectView.swift in Sources */,
+				D09F2D422A09A97D00F0AB7D /* NetworkService.swift in Sources */,
+				D0C4FEBB29EDEFE900AD090B /* ObdData.swift in Sources */,
+				D0077BB72A04719B008CDD35 /* LoggingViewModel.swift in Sources */,
+				D086D24F29B1537400AEA541 /* Constants.swift in Sources */,
+				D087862129F3CEF400286C90 /* InfoRow.swift in Sources */,
+				D086D26829BA6D7000AEA541 /* HomeViewModel.swift in Sources */,
+				D086D26529BA6BAB00AEA541 /* BluetoothClient.swift in Sources */,
+				D086D25A29B1720A00AEA541 /* Settings.swift in Sources */,
+				D0C4FEC029F1EC0900AD090B /* ObdDataModel.swift in Sources */,
+				D086D25729B15C6F00AEA541 /* HomeView.swift in Sources */,
+				D0077BB52A046ED0008CDD35 /* LoggingView.swift in Sources */,
+				D0C4FEC329F3553300AD090B /* TextModifier.swift in Sources */,
+				D086D26629BA6BAB00AEA541 /* SensorList.swift in Sources */,
+				D0077BB92A0473DD008CDD35 /* LogService.swift in Sources */,
+				D086D25C29B17DB900AEA541 /* KeywordBubble.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D081E55A2995902B00397394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D081E55B2995902B00397394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D081E55D2995902B00397394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nostic/Preview Content\"";
+				DEVELOPMENT_TEAM = Q678CV3DLR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nostic/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth capability is needed to read OBD values.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshualeung.Nostic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D081E55E2995902B00397394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nostic/Preview Content\"";
+				DEVELOPMENT_TEAM = Q678CV3DLR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nostic/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth capability is needed to read OBD values.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshualeung.Nostic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D081E5492995902800397394 /* Build configuration list for PBXProject "Nostic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D081E55A2995902B00397394 /* Debug */,
+				D081E55B2995902B00397394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D081E55C2995902B00397394 /* Build configuration list for PBXNativeTarget "Nostic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D081E55D2995902B00397394 /* Debug */,
+				D081E55E2995902B00397394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D004FE1B2A1F414E00BDFEDC /* XCRemoteSwiftPackageReference "CombineCoreBluetooth" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StarryInternet/CombineCoreBluetooth";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D004FE1C2A1F414E00BDFEDC /* CombineCoreBluetooth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D004FE1B2A1F414E00BDFEDC /* XCRemoteSwiftPackageReference "CombineCoreBluetooth" */;
+			productName = CombineCoreBluetooth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D081E5462995902800397394 /* Project object */;
+}
